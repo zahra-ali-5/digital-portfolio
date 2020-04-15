@@ -1,0 +1,123 @@
+body{
+    color: red;
+    margin: 0;
+    padding: 0;
+    color: rgb(75, 26, 167);
+
+}
+
+a {
+    text-decoration: none;
+
+}
+.navbar{
+    background-image: linear-gradient(red, yellow,purple, green);
+   /* background-color: rgb(216, 228, 53);*/
+   color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    display: flex;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar li a{
+    text-decoration: none;
+    padding: 15px 10px;
+}
+
+.dropdown{
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown.dropdownbutton{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: lawngreen;
+    min-width: 100px;
+    z-index: 1;
+}
+.dropdownContent a{
+    float: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+}
+.dropdownContent a:hover{
+    background-color: black;
+    color: red;
+}
+
+.dropdown:hover .dropdownContent{
+    display: block;
+}
+.container{
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.button{
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color:#274488;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.image-container{
+    width 33.33%;
+}
+
+.img-container img{
+    width:150px;
+}
+.column{
+    float: left;/*shrinking, wrap up nicely*/
+    width:31%;
+    padding: 15px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and(max-width:640px){
+    .column{
+        width:100%;
+    }
+}
+.footer{
+    text-align: center;
+    background-color: rgb(216, 228, 53);
+    padding: 20px 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+/*pixcels are great for demo purposes*/
+/*
+key : value pair;
+*/
